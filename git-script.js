@@ -13,4 +13,8 @@ shell.exec("git checkout -b meow");
 
 shell.exec("echo 'New branch'");
 
+shell.exec("git push -u origin meow curl -XPOST -d '{'title':'i am title text', 'base':'master', 'head':'meow', 'body':'i am body text'}' \ https://api.github.com/repos/ff-automation/pulls");
+
+shell.exec("echo 'Make PR'");
+
 //shell.exec("git push origin master --force");
