@@ -9,15 +9,15 @@ shell.exec("git commit -m 'testtests'");
 
 shell.exec("echo 'Changes commited'");
 
-shell.exec("git checkout -b meow3");
+shell.exec("git checkout -b meow4");
 
 shell.exec("echo 'New branch'");
 
-shell.exec("git push -u origin meow3");
+shell.exec("git push -u origin meow4");
 
 shell.exec("echo 'Pushed'");
 
-//shell.exec("curl -XPOST -d '{'title':'i am title text', 'base':'master', 'head':'meow3', 'body':'i am body text'}' \ https://api.github.com/repos/ff-automation/pulls");
+shell.exec("curl -XPOST -d \ https://api.github.com/repos/ff-automation/pulls");
 
 shell.exec("echo 'Make PR'");
 
